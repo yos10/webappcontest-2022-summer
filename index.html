@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コーヒーを淹れるのに必要なお湯の量を計算</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="container">
+    <form id="form">
+      <div class="form-item">
+        <label for="ratio-bean">コーヒー豆の割合 (g)</label>
+        <input type="number" min="1" placeholder="豆の重さ" value="7" required id="ratio-bean">
+      </div>
+
+      <div class="form-item">
+        <label for="ratio-water">お湯の割合 (g)</label>
+        <input type="number" min="1" placeholder="お湯の重さ" value="100" required id="ratio-water">
+      </div>
+
+      <div class="form-item">
+        <label for="weight-bean">用意したコーヒー豆の重さ (g)</label>
+        <input type="number" min="1" placeholder="豆の重さ" value="21" required id="weight-bean">
+      </div>
+
+      <div class="form-item">
+        <button id="button" type="submit">結果を表示</button>
+      </div>
+    </form>
+
+    <div id="result">
+    </div>
+
+  </div>
+</body>
+
+</html>
