@@ -1,4 +1,6 @@
-# N 予備校 2022 年の夏のコンテスト応募作品
+# N 予備校 2022 年度夏のコンテスト応募作品
+
+https://yos10.github.io/webappcontest-2022-summer/
 
 ## この作品について
 
@@ -12,4 +14,4 @@
 
 ## 参考にしたコーヒーの淹れ方
 
-[![世界一美味しいコーヒーの淹れ方 〜ワールド・バリスタ・チャンピオン井崎英典が教える６つのポイント〜](https://img.youtube.com/vi/o3eMg4DYLKo/0.jpg)](https://www.youtube.com/watch?v=o3eMg4DYLKo)
+[![YouTube: 世界一美味しいコーヒーの淹れ方 〜ワールド・バリスタ・チャンピオン井崎英典が教える６つのポイント〜](https://img.youtube.com/vi/o3eMg4DYLKo/0.jpg)](https://www.youtube.com/watch?v=o3eMg4DYLKo)
