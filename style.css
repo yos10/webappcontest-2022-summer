@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 400px;
+  padding-top: 24px;
+}
+
+#form {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  gap: 32px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 16px;
+}
+
+input {
+  height: 48px;
+  min-width: 300px;
+  padding: 0 8px;
+  font-size: 24px;
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+
+#button {
+  height: 48px;
+  min-width: 300px;
+  padding: 0 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(91, 180, 222, 0.8);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+#button:active {
+  background: rgba(91, 180, 222);
+}
+
+#result {
+  margin-top: 32px;
+}
+
+#result-content > p {
+  text-align: center;
+}
+
+.total-water {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  text-align: center;
+}
+
+th {
+  font-weight: normal;
+  padding-bottom: 16px;
+}
+
+td {
+  padding-bottom: 16px;
+}
