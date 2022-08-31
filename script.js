@@ -61,6 +61,14 @@ function removeHtmlElement(querySelector) {
   }
 }
 
+// input のテキストをすべて選択するイベント登録
+const inputs = document.querySelectorAll('input');
+for (const input of inputs) {
+  input.addEventListener('click', () => {
+    input.select();
+  });
+}
+
 // input の value を減らすボタンのイベント登録
 const stepDownButtons = document.querySelectorAll('.step-down');
 for (const button of stepDownButtons) {
