@@ -61,7 +61,23 @@ function removeHtmlElement(querySelector) {
   }
 }
 
-// イベント登録
+// input の value を減らすボタンのイベント登録
+const stepDownButtons = document.querySelectorAll('.step-down');
+for (const button of stepDownButtons) {
+  button.addEventListener('click', () => {
+    button.nextElementSibling.stepDown();
+  });
+}
+
+// input の value を増やすボタンのイベント登録
+const stepUpButtons = document.querySelectorAll('.step-up');
+for (const button of stepUpButtons) {
+  button.addEventListener('click', () => {
+    button.previousElementSibling.stepUp();
+  });
+}
+
+// 結果表示ボタンのイベント登録
 const form = document.querySelector('#form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
