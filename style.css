@@ -1,71 +1,75 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  font-family: sans-serif;
+  min-height: 100vh;
 }
 
 #container {
-  width: 400px;
-  padding-top: 24px;
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 10px;
 }
 
 #form {
-  display: grid;
-  grid-template: repeat(4, 1fr) / 1fr;
-  gap: 32px;
-}
-
-.form-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
-  margin-bottom: 16px;
-}
-
-input {
-  height: 48px;
-  min-width: 300px;
-  padding: 0 8px;
-  font-size: 24px;
-  border: 1px solid #cccccc;
   text-align: center;
 }
 
-#button {
-  height: 48px;
-  min-width: 300px;
-  padding: 0 8px;
-  font-size: 24px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(91, 180, 222, 0.8);
+.form-item {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.5em;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5em;
   border: none;
-  border-radius: 5px;
   outline: none;
   cursor: pointer;
+}
+
+.submit-button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#button {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: whitesmoke;
+  background: rgba(91, 180, 222, 0.8);
+  border-radius: 5px;
 }
 
 #button:active {
   background: rgba(91, 180, 222);
 }
 
-#result {
-  margin-top: 32px;
-}
-
-#result-content > p {
+#result-content {
   text-align: center;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 .total-water {
-  font-size: 24px;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -80,9 +84,9 @@ tr {
 
 th {
   font-weight: normal;
-  padding-bottom: 16px;
+  padding-bottom: 1em;
 }
 
 td {
-  padding-bottom: 16px;
+  padding-bottom: 1em;
 }
