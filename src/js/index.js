@@ -141,6 +141,10 @@ function displaySavedRecipe() {
   }
 }
 
+function scrollToTop(element) {
+  element.scrollIntoView();
+}
+
 // input の value を減らすボタンのイベント登録
 const stepDownButtons = document.querySelectorAll('.step-down');
 for (const button of stepDownButtons) {
@@ -197,14 +201,15 @@ savedRecipe.addEventListener('click', (e) => {
       repo.del(id);
       displaySavedRecipe();
     }
-  // 保存したレシピをクリックした時
+    // 保存したレシピをクリックした時
   } else if (targetRecipeElement) {
     const recipeId = targetRecipeElement.querySelector('[data-id]').dataset.id;
     const recipe = repo.getOneRecipe(recipeId);
     ratioBean.value = recipe.ratioBean;
     ratioWater.value = recipe.ratioWater;
     bean.value = recipe.bean;
-    displayResults()
+    displayResults();
+    scrollToTop(document.getElementById('container'));
   }
 });
 
