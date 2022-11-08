@@ -93,6 +93,7 @@ input[type='number'] {
 #brand {
   line-height: 1.25rem;
   padding: 16px;
+  word-break: break-all;
 }
 
 #brand[contenteditable=true]:empty:not(:focus):before {
@@ -133,6 +134,7 @@ input[type='number'] {
 
 .item-brand {
   grid-area: brand;
+  word-break: break-all;
 }
 
 .item-1 {
